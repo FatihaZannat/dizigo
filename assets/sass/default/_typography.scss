@@ -52,6 +52,10 @@ ul{
     padding-left: 20px;
     list-style: square outside none;
 }
+ol{
+    padding-left: 20px;
+    margin-bottom: 25px
+}
 img{
     width: 100px;
     height: auto;
@@ -77,3 +81,55 @@ textarea {
 label {
   margin-bottom: 8px;
 }
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+blockquote {
+    margin: 0 15px;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+address{
+    margin: 0 0 15px;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 25px;
+
+    th{
+        font-weight: 700px;
+        color: var(--gray);
+    }
+    td,
+    th{
+        border-top: 1px solid var(--lightGray);
+        padding: 11px 10px;
+    }
+}
+
+dl{
+    margin-bottom: 25px;
+    dt{
+        font-weight: 700;
+    }
+}
+ 
+b,
+strong{
+    font-weight: bold;
+}
+
+pre{
+    color: var(--gray);
+    border: 1px solid var(--lightGray);
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
