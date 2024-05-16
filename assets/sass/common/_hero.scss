@@ -1,0 +1,29 @@
+.fz_hero.fz_style_1{
+    .fz_hero_left{
+        max-width: 650px;
+
+        .fz_hero_btns{
+            display: flex;
+            gap: 15px;
+        }
+        .fz_hero_icons {
+            a{
+                height: 26px;
+                width: 26px;
+            }
+        }
+    }
+    .fz_hero_right{
+        max-width: 550px;
+        .fz_hero_main_img{
+            border-top-left-radius: 200px;
+        }
+        .fz_object{
+            width: 83px;
+            height: 76px;
+            bottom: -10px;
+            right: -60px;
+        }
+    }
+
+}

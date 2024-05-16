@@ -1,0 +1,12 @@
+@for $i from 1 through 160 {
+    .fz_height_#{$i} {
+        height: $i + px;
+    }
+}
+
+.fz_height_170 {
+    height: 170px;
+}
+.fz_height_182 {
+    height: 182px;
+}

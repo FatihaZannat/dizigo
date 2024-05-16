@@ -1,0 +1,41 @@
+.fz_site_header{
+
+}
+
+.fz_site_header.fz_style_1{
+    background-color: var(--secondery-color);
+    color: white;
+
+.fz_main_header_in{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fz_main_header_right{
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    .fz_nav{
+
+        .fz_nav_list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+            li{
+                list-style: none;
+                padding-right: 45px;
+               &:last-child{
+                padding-right: 0;
+               } 
+               a{
+                font-weight: 500;
+               }
+            }
+        }
+    }
+}
+}
