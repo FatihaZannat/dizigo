@@ -3,7 +3,8 @@
 }
 
 .fz_site_header.fz_style_1{
-    background-color: var(--secondery-color);
+    // background-color: var(--secondery-color);
+    background-color: transparent;
     color: white;
 
 .fz_main_header_in{
@@ -38,4 +39,10 @@
         }
     }
 }
+}
+
+.fz_sticky_header{
+    position: fixed;
+   width: 100%;
+   z-index: 999;
 }
