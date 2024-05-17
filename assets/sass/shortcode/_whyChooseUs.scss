@@ -1,0 +1,19 @@
+.fz_why_choose{
+
+
+
+    .fz_why_choose_iconBox{
+        gap: 80px;
+        > *{
+            max-width: 312px;
+        }
+    }
+
+    .fz_whyChoose_icon{
+        height: 96px;
+        width: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

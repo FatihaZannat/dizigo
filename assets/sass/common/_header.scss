@@ -46,3 +46,16 @@
    width: 100%;
    z-index: 999;
 }
+.fz_gescout_sticky{
+    position: fixed;
+    top: -110px;
+    transition: all 0.4s ease;
+
+    &.fz_sticky_header.fz_style_1{
+        background-color: var(--secondery-color);
+    }
+
+}
+.fz_gescout_show{
+    top: 0;
+}

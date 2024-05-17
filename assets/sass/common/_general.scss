@@ -3,6 +3,9 @@
         margin-bottom: $i + px;
     }
 }
+.fz_mb_87{
+  margin-bottom: 87px;
+}
 
 .fz_fs_16 {
     font-size: 16px;
@@ -147,10 +150,16 @@
   .fz_black_bg{
     background-color: var(--secondary-color);
   }
-  .fz_pinkish_bg{
-    background-color: #FDF6F0;
+  .fz_cyan_bg{
+    background-color: var(--cyan);
   }
-
+  .fz_lightBlue_bg{
+    background-color: var(--lightBlue);
+  }
+  
+  .fz_lightGreen_bg{
+    background-color: var(--lightGreen);
+  }
   // button
   .fz_btn.fz_style_1{
     border: none;
@@ -177,5 +186,11 @@
         color: var(--primary-color);
         border: 1px solid transparent;
       }
+     
+    }
+    &.fz_style_arrow{
+     span:not(:last-child){
+      margin-right: 10px;
+     }
     }
   }
