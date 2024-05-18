@@ -3,7 +3,7 @@
 }
 
 .fz_site_header.fz_style_1{
-    // background-color: var(--secondery-color);
+    // background-color: var(--secondary-color);
     background-color: transparent;
     color: white;
 
@@ -52,7 +52,7 @@
     transition: all 0.4s ease;
 
     &.fz_sticky_header.fz_style_1{
-        background-color: var(--secondery-color);
+        background-color: var(--secondary-color);
     }
 
 }

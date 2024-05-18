@@ -148,7 +148,7 @@
     color: var(--accent);
   }
   .fz_black_bg{
-    background-color: var(--secondary-color);
+    background-color: var( --secondary-color);
   }
   .fz_cyan_bg{
     background-color: var(--cyan);
@@ -193,4 +193,8 @@
       margin-right: 10px;
      }
     }
+  }
+
+  .fz_text_accent{
+    color: var(--accent);
   }
