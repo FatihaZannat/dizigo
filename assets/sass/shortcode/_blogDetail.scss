@@ -1,0 +1,30 @@
+
+
+.fz_blog_details{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-left: 1px solid var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+    border-right: 1px solid var(--cyan);
+}
+
+.fz_blog_btn{
+    padding: 16px 35px;
+    background-color: var(--cyan);
+    .fz_blog_read{
+        padding-right: 6px;
+    }
+
+    .fz_blog_comment{
+        padding-right: 29px;
+        p{
+            padding-left: 6px;
+        }
+    }
+    .fz_blog_eye{
+        p{
+            padding-left: 6px;
+        }
+    }
+}
