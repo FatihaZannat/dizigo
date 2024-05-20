@@ -14,7 +14,7 @@
 
 .fz_fs_18 {
     font-size: 18px;
-    line-height: 2.8em;
+    line-height: 1.2em;
 }
 .fz_fs_21{
     font-size: 21px;
@@ -101,11 +101,14 @@
     gap: 50px 0;
   }
 
-  .fz_pl_100{
-    padding-left: 100px;
+  .fz_pl_5{
+    padding-left: 5px;
   }
-  .fz_pr_100{
-    padding-right: 100px;
+  .fz_pr_5{
+    padding-right: 5px;
+  }
+  .fz_pr_20{
+    padding-right: 20px;
   }
   .fz_bg_filled{
     background-size: cover;

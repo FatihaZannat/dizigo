@@ -1,0 +1,44 @@
+footer{
+    background-color: black;
+
+    ul{
+        list-style: none;
+        li{
+                margin-bottom: 16px;
+            a{
+                font-size: 18px;
+                font-weight: 500;
+                 
+            }
+            &:hover{
+                color: var(--accent);
+            }
+        }
+    }
+    .fz_footer_logo{
+        width: 135px;
+        margin-right: 70px;
+    }
+    .fz_footer_social{
+        >*:not(:last-child){
+            margin-right: 31px;
+        }
+    }
+    .form-control{
+        height: 50px;
+    }
+    .fz_btn{
+        width: 91px;
+        height: 40px;
+        top: 5px;
+        right: 5px;
+    }
+    .fz_border{
+        border: 1px solid #564C4C;
+        opacity: 0.3;
+        .fz_up_btn{
+            right: -221px;
+            top: -20px;
+        }
+    }
+}

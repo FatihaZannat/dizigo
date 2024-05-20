@@ -1,16 +1,28 @@
 
-
+.fz_data_tag{
+    height: 60px;
+    width: 60px;
+    background-color: var(--accent);
+    top: 35px;
+    left: 35px;
+    p{
+        width: 43px;
+        height: 45px;
+        margin: 8px;
+        text-align: center;
+    }
+}
 .fz_blog_details{
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
     border-left: 1px solid var(--cyan);
-    border-bottom: 1px solid var(--cyan);
     border-right: 1px solid var(--cyan);
 }
 
 .fz_blog_btn{
     padding: 16px 35px;
+    border-bottom: 1px solid var(--cyan);
     background-color: var(--cyan);
     .fz_blog_read{
         padding-right: 6px;
