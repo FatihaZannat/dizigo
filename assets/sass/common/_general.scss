@@ -3,6 +3,9 @@
         margin-bottom: $i + px;
     }
 }
+.fz_mb_3{
+  margin-bottom: 3px;
+}
 .fz_mb_87{
   margin-bottom: 87px;
 }
@@ -155,6 +158,9 @@
   }
   .fz_cyan_bg{
     background-color: var(--cyan);
+  }
+  .fz_accent_bg{
+    background-color: var(--accent);
   }
   .fz_lightBlue_bg{
     background-color: var(--lightBlue);
