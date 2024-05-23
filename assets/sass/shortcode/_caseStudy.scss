@@ -1,8 +1,42 @@
-.fz_case_study{
+.fz_case_study {
+    .fz_case_study_heading{
+        a{
+            padding: 10px 20px;
+        }
+    }
 
-    .fz_case_study_arrow_btns{
-        a:not(:first-child){
-           padding-left: 10px;
+    .fz_case_study_arrow_btns {
+        .fz_prev_btn {
+            border: 1px solid black;
+        }
+
+        a:not(:first-child) {
+            padding-left: 10px;
+        }
+    }
+
+    .fz_case_study_btns {
+        width: 90%;
+        height: 98px;
+        background-color: var(--accent);
+        bottom: 76px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        opacity: 0;
+        transition: all 0.4s ease;
+        svg{
+            background-color: white;
+            border-radius: 50%;
+            margin-right: 19px;
+        }
+       
+    }
+    .fz_case_study_img{
+
+        &:hover{
+            .fz_case_study_btns{
+                opacity: 1;
+            }
         }
     }
 }

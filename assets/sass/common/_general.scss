@@ -103,12 +103,17 @@
   .fz_gap_y_50 {
     gap: 50px 0;
   }
-
+.fz_noWrap{
+  white-space: nowrap;
+}
   .fz_pl_5{
     padding-left: 5px;
   }
   .fz_pr_5{
     padding-right: 5px;
+  }
+  .fz_pr_10{
+    padding-right: 10px;
   }
   .fz_pr_20{
     padding-right: 20px;

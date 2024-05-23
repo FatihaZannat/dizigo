@@ -66,8 +66,9 @@ footer {
         opacity: 0.3;
 
         .fz_up_btn {
-            right: -221px;
-            top: -20px;
+            position: fixed;
+            right: 50px;
+            bottom: 100px;
         }
     }
 }

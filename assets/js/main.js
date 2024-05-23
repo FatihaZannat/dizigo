@@ -12,6 +12,7 @@
     $(function(){
         dynamicBackground()
         stickyHeader()
+        scrollUp()
     })
 
     // preloader--------------
@@ -63,6 +64,21 @@
         lastScrollTop = windowTop
         })
     }
+// ------------scrollUp
 
-
+    function scrollUp(){
+        console.log('hello');
+        $(window).on('scroll', function(){
+            if ($(this).scrollTop() > 200){
+                console.log($(this).scrollTop() );
+                $('.fz_up_btn').fadeIn()
+            }else{
+                $('.fz_up_btn').fadeOut()
+            }
+        })
+        $('.fz_up_btn').click( function(){
+            $('html, body').animate({scrollTop : 0})
+        })
+    }
 })(jQuery)
+
