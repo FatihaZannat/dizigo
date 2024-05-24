@@ -1,18 +1,19 @@
-
-.fz_data_tag{
+.fz_data_tag {
     height: 60px;
     width: 60px;
     background-color: var(--accent);
     top: 35px;
     left: 35px;
-    p{
+
+    p {
         width: 43px;
         height: 45px;
         margin: 8px;
         text-align: center;
     }
 }
-.fz_blog_details{
+
+.fz_blog_details {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -20,23 +21,109 @@
     border-right: 1px solid var(--cyan);
 }
 
-.fz_blog_btn{
+.fz_blog_btn {
     padding: 16px 35px;
     border-bottom: 1px solid var(--cyan);
     background-color: var(--cyan);
-    .fz_blog_read{
+
+    .fz_blog_read {
         padding-right: 6px;
     }
 
-    .fz_blog_comment{
+    .fz_blog_comment {
         padding-right: 29px;
-        p{
+
+        p {
             padding-left: 6px;
         }
     }
-    .fz_blog_eye{
-        p{
+
+    .fz_blog_eye {
+        p {
             padding-left: 6px;
         }
+    }
+}
+
+// blog-page
+
+.fz_search {
+    background: var(--cyan);
+    border-radius: 5px;
+
+    input {
+        margin: 40px 44px;
+        width: calc(100% - 88px);
+        height: 50px;
+        border: none;
+        outline: none;
+        padding-left: 20px;
+    }
+
+    .fz_blog_search_btn {
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
+
+.fz_latest_post {
+    padding: 43px 44px 53px 46px;
+    background: var(--cyan);
+
+    img {
+        width: 100px;
+        height: 93px;
+        margin-right: 14px;
+    }
+
+    .fz_latest_post_in {
+        padding: 10px;
+    }
+}
+
+.fz_categories {
+    div {
+        padding: 47px 46px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+
+            a {
+                color: var(--secondary-color);
+
+                span {
+                    margin-right: 15px;
+                    width: 20px;
+                    height: 20px;
+                    background: black;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+
+            }
+        }
+    }
+}
+.fz_tags{
+    padding: 46px;
+    button{
+        background: white;
+        padding: 5px 10px;
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-right: 15px;
+        margin-bottom: 20px;
     }
 }
