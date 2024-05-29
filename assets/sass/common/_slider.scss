@@ -1,0 +1,14 @@
+.fz_slide{
+    margin-left: 15px;
+    margin-right: 15px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.slick-list{
+    .slick-track{
+        height: 100%;
+    }
+}

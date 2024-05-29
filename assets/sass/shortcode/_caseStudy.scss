@@ -1,4 +1,5 @@
 .fz_case_study {
+    transition: all 0.3s ease;
     .fz_case_study_heading{
         a{
             padding: 10px 20px;
@@ -6,17 +7,22 @@
     }
 
     .fz_case_study_arrow_btns {
-        .fz_prev_btn {
+        .fz_slider_prev,
+        .fz_slider_next{
             border: 1px solid black;
+            transition: all 0.4s ease;
+
+            &:hover{
+                background-color: var(--secondary-color);
+                color: white;
+            }
         }
 
-        a:not(:first-child) {
-            padding-left: 10px;
-        }
+      
     }
 
     .fz_case_study_btns {
-        width: 90%;
+        width: 90% ;
         height: 98px;
         background-color: var(--accent);
         bottom: 76px;
@@ -32,10 +38,18 @@
        
     }
     .fz_case_study_img{
-
+        img{
+            transition: all 0.3s ease-in-out;
+        }
+      overflow: hidden;
         &:hover{
             .fz_case_study_btns{
                 opacity: 1;
+                transform: scale(1.01);
+            }
+            img{
+                
+                transform: scale(1.1);
             }
         }
     }
