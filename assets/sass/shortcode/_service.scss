@@ -2,11 +2,10 @@
     .row {
 
         &:hover {
-            .fz_service_btn2 {
+            .fz_service_btn {
                 path {
                     fill: black;
                 }
-
                 background-color: var(--accent);
                 border: none;
             }
