@@ -15,6 +15,7 @@
     scrollUp()
     modalVideo()
     slickInt()
+    mainNav()
     if ($.exists('.wow')) {
       new WOW().init();
     }
@@ -69,8 +70,9 @@
       lastScrollTop = windowTop
     })
   }
-  // ------------scrollUp
 
+
+  // ------------scrollUp
   function scrollUp() {
     // console.log('hello');
     $(window).on('scroll', function () {
@@ -85,6 +87,20 @@
       $('html, body').animate({ scrollTop: 0 })
     })
   }
+
+
+  // -----------------mobileNav
+  function mainNav(){
+    $('.fz_nav').append("<span class='fz_menu_toggle'><span></span></span>")
+    $('.fz_menu_toggle').on('click', function(){
+      $(this)
+      .toggleClass('fz_toggle_active')
+      .siblings('.fz_nav_list')
+      .toggleClass('fz_active')
+    })
+  }
+
+
   // -----------------videomodal
   function modalVideo() {
     if ($.exists('.fz_video_open')) {

@@ -1,61 +1,173 @@
-.fz_site_header{
+.fz_site_header {}
 
-}
-
-.fz_site_header.fz_style_1{
+.fz_site_header.fz_style_1 {
     // background-color: var(--secondary-color);
     background-color: transparent;
     color: white;
 
-.fz_main_header_in{
-    height: 100px;
+   
+}
+
+.fz_site_header.fz_style_1 {
+   
+   .fz_main_header_in{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+   }
+}
+.fz_main_header_in{
+    height: 100px;
 }
 
-.fz_main_header_right{
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    .fz_nav{
+@media screen and (max-width: 1199px) {
 
-        .fz_nav_list{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-
-            li{
-                list-style: none;
-                padding-right: 45px;
-               &:last-child{
-                padding-right: 0;
-               } 
-               a{
-                font-weight: 500;
-               }
+   .container {
+      max-width: 100%;
+    }
+   
+}
+@media screen and (min-width: 1200px){
+   
+    .fz_site_header.fz_style_1 {
+        background-color: transparent;
+        color: white;
+    
+    
+        .fz_main_header_right {
+            .fz_nav {
+    
+                .fz_nav_list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+    
+                    li {
+                        list-style: none;
+                        padding-right: 45px;
+    
+                        &:last-child {
+                            padding-right: 0;
+                        }
+    
+                        a {
+                            font-weight: 500;
+                        }
+                    }
+                }
             }
         }
     }
-}
+    
 }
 
-.fz_sticky_header{
+.fz_sticky_header {
     position: fixed;
-   width: 100%;
-   z-index: 999;
+    width: 100%;
+    z-index: 999;
 }
-.fz_gescout_sticky{
+
+.fz_gescout_sticky {
     position: fixed;
     top: -110px;
     transition: all 0.4s ease;
 
-    &.fz_sticky_header.fz_style_1{
+    &.fz_sticky_header.fz_style_1 {
         background-color: var(--secondary-color);
     }
 
 }
-.fz_gescout_show{
+
+.fz_gescout_show {
     top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+    .fz_nav{
+        .fz_nav_list{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            left: -100vw;
+            top: 0;
+            background-color: var(--secondary-color);
+            overflow: hidden;
+            &.fz_active{
+                left: 0vw;
+               
+            padding-top: 80px;
+            }
+        }
+    }
+    .fz_menu_toggle {
+        position: absolute;
+        right: 15px;
+        width: 30px;
+        height: 27px;
+        cursor: pointer;
+        top: 50%;
+        margin-top: -13px;
+        span,
+        span::after,
+        span::before {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            display: block;
+            position: relative;
+            top: 12px;
+        }
+
+        span {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 9px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -9px;
+            }
+        }
+
+    }
+
+    .fz_site_branding{
+        position: relative;
+        z-index: 101;
+    }
+    .fz_main_header_in{
+        height: 80px;
+        
+    }
+    .fz_toggle_active{
+        span{
+            background-color: transparent;
+            &::before{
+                margin-top: 9px;
+                transform: rotate(45deg);
+            }
+            &::after{
+                margin-top: -9px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+   .fz_nav{
+    .fz_nav_list{
+      
+            a{
+                padding: 10px 15px;
+                font-size: 22px;
+                display: block;
+            }
+        
+    }
+   }
+
 }
