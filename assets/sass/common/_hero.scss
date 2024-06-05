@@ -1,6 +1,6 @@
 .fz_hero.fz_style_1{
     .fz_hero_left{
-        max-width: 650px;
+            max-width: 648px;
 
         .fz_hero_btns{
             display: flex;
@@ -17,6 +17,10 @@
         max-width: 550px;
         .fz_hero_main_img{
             border-top-left-radius: 200px;
+            @media screen and (max-width:991px) {
+                border-top-left-radius: 00px;
+                margin: 0 auto;
+            }
         }
         .fz_object{
             width: 83px;
@@ -26,4 +30,28 @@
         }
     }
 
+}
+@media screen and (max-width:991px){
+    .fz_hero_in{
+        
+        flex-direction: column;
+        .fz_hero_left{
+            margin: 0 auto;
+            text-align: center;
+            .fz_hero_btns{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .fz_hero_right{
+           margin: 0 auto;
+        
+        .fz_object{
+            display: none;
+        }
+
+        }
+    }
+    
 }

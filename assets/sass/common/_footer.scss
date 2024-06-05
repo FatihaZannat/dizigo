@@ -40,8 +40,13 @@ footer {
     }
 
     .fz_footer_logo {
-        width: 135px;
-        margin-right: 70px;
+       
+        a{
+            margin-right: 70px;
+        }
+        @media screen and (max-width: 991px) {
+            margin-bottom: 80px;
+        }
     }
 
     .fz_footer_social {
@@ -70,5 +75,22 @@ footer {
             right: 50px;
             bottom: 100px;
         }
+    }
+}
+.fz_footer_in{
+
+    @media screen and (max-width:991px) {
+       
+           div{
+            &:last-child{
+                margin-top: 50px;
+              text-align: center;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+               }
+           }
     }
 }

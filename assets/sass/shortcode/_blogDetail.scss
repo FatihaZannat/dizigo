@@ -19,6 +19,11 @@
     padding-bottom: 25px;
     border-left: 1px solid var(--cyan);
     border-right: 1px solid var(--cyan);
+    @media screen and (max-width:991px) {
+        div{
+            flex-direction: column;
+        }
+    }
 }
 
 .fz_blog_btn {
@@ -42,6 +47,13 @@
         p {
             padding-left: 6px;
         }
+    }
+    @media screen and (max-width:991px) {
+      div{
+        &:last-child{
+            flex-direction: column;
+        }
+      }
     }
 }
 

@@ -1,6 +1,8 @@
 .fz_testimonial_in {
 
-
+.fz_testimonial_biodata{
+  
+}
     .fz_testimonial_right {
         .fz_testimonial_img {
             max-width: 538px;
@@ -11,12 +13,16 @@
             height: 76px;
             top: -50px;
             right: -52px;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
     }
 
 }
 
 .fz_testimonials_section {
+    
 .fz_testimonial{
     padding: 30px 20px;
     // background-color: aqua;
@@ -29,6 +35,9 @@
     &:hover{
         background-color: var(--cyan);
     }
+}
+@media screen and (max-width:991px) {
+    display: none;
 }
    
 }
@@ -48,5 +57,9 @@
     position: absolute;
     bottom: 0;
     left: 272px;
+}
+@media screen and (max-width:991px) {
+    display: none;
+    
 }
 }
