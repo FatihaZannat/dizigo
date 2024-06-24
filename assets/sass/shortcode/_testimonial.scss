@@ -6,6 +6,7 @@
     .fz_testimonial_right {
         .fz_testimonial_img {
             max-width: 538px;
+             
         }
 
         .fz_testimonial_object {
@@ -16,6 +17,9 @@
             @media screen and (max-width: 991px) {
                 display: none;
             }
+        }
+        @media screen and (max-width: 991px) {
+            justify-content: center !important;
         }
     }
 

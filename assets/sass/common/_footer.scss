@@ -45,7 +45,10 @@ footer {
             margin-right: 70px;
         }
         @media screen and (max-width: 991px) {
-            margin-bottom: 80px;
+            margin-bottom: 50px;
+            a{
+                margin-right: 0;
+            }
         }
     }
 

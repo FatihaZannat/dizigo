@@ -153,6 +153,7 @@
             speed: 300,
             slidesToShow: 3,
             slidesToScroll: 1,
+            swipeToSlide: false,
             prevArrow: $(this).find('.fz_slider_prev'),
             nextArrow: $(this).find('.fz_slider_next'),
             responsive: [
@@ -194,9 +195,18 @@
           speed: 300,
           slidesToShow: 4,
           slidesToScroll: 1,
+          swipeToSlide: false,
           prevArrow: $(this).find('.fz_prev_btn'),
           nextArrow: $(this).find('.fz_next_btn'),
           responsive: [
+            {
+              breakpoint: 1224,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+              },
             {
               breakpoint: 1024,
               settings: {

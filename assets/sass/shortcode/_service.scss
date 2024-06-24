@@ -1,5 +1,7 @@
 .fz_service_in {
+    
     .row {
+
 
         &:hover {
             .fz_service_btn {
@@ -48,6 +50,14 @@
         }
     }
 
+}
+.fz_service_in {
+
+    @media screen and (max-width:767px) {
+        .fz_servie_text{
+            text-align: center;
+        }
+    }
 }
 
 .fz_satisfaction {

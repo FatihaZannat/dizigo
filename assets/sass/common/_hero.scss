@@ -18,14 +18,14 @@
         .fz_hero_main_img{
             border-top-left-radius: 200px;
             @media screen and (max-width:991px) {
-                border-top-left-radius: 00px;
+                // border-top-left-radius: 00px;
                 margin: 0 auto;
             }
         }
         .fz_object{
             width: 83px;
             height: 76px;
-            bottom: -10px;
+            bottom: -60px;
             right: -60px;
         }
     }

@@ -11,49 +11,75 @@
         margin: 8px;
         text-align: center;
     }
+    @media screen and (max-width: 991px) {
+        
+   
+            top: 30px;
+            left: 280px;
+        
+        p {
+            width: 23px;
+            height: 25px;
+            margin: 8px;
+        }
+    }
+    
 }
 
-.fz_blog_details {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    border-left: 1px solid var(--cyan);
-    border-right: 1px solid var(--cyan);
-    @media screen and (max-width:991px) {
-        div{
-            flex-direction: column;
+.fz_blog_details{
+    display: flex;
+    justify-content: center;
+    .fz_blog_details_in {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        border-left: 1px solid var(--cyan);
+        border-right: 1px solid var(--cyan);
+        @media screen and (max-width:991px) {
+            max-width: 80%;
+            div{
+                justify-content: space-between;
+            }
         }
     }
 }
 
-.fz_blog_btn {
-    padding: 16px 35px;
-    border-bottom: 1px solid var(--cyan);
-    background-color: var(--cyan);
-
-    .fz_blog_read {
-        padding-right: 6px;
-    }
-
-    .fz_blog_comment {
-        padding-right: 29px;
-
-        p {
-            padding-left: 6px;
+.fz_blog_btn{
+   
+    .fz_blog_btn_in {
+        padding: 16px 35px;
+        border-bottom: 1px solid var(--cyan);
+        background-color: var(--cyan);
+    
+        @media screen and (max-width:991px) {
+            max-width: 80%;
+            margin: auto;
         }
-    }
-
-    .fz_blog_eye {
-        p {
-            padding-left: 6px;
+    
+        .fz_blog_read {
+            padding-right: 6px;
         }
-    }
-    @media screen and (max-width:991px) {
-      div{
-        &:last-child{
-            flex-direction: column;
+    
+        .fz_blog_comment {
+            padding-right: 29px;
+    
+            p {
+                padding-left: 6px;
+            }
         }
-      }
+    
+        .fz_blog_eye {
+            p {
+                padding-left: 6px;
+            }
+        }
+        @media screen and (max-width:991px) {
+          div{
+            &:last-child{
+                flex-direction: column;
+            }
+          }
+        }
     }
 }
 

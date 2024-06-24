@@ -10,6 +10,15 @@
             display: inline-flex;
             gap: 10px;
             align-items: center;
+            :hover{
+                background-color: black;
+            }
+        }
+        @media screen and (max-width:991px) {
+            flex-direction: column;
+          a{
+            margin-top: 40px;
+          }
         }
     }
 
@@ -22,6 +31,14 @@
     }
 
 }
+.fz_who_we_are_left{
+
+    @media screen and (max-width:991px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .fz_who_we_are_left_in {
     height: 320px;
@@ -32,13 +49,24 @@
     left: 175px;
     top: 90px;
     
-
+@media screen and (max-width:991px) {
    
+    height: 220px;
+    width: 220px;
+    top: 50px;
+}  
+}
+.fz_who_we_are_imgs{
+  @media screen and (max-width:991px) {
+    
+  }
 }
 .fz_who_we_are_img1 {
     top: 0;
     max-width: 312px;
     max-height: 345px;
+    @media screen and (max-width:991px){
+    }
 }
 
 .fz_who_we_are_img2 {
@@ -47,6 +75,9 @@
     // right:0px;
     max-width: 232px;
     max-height: 290px;
+    @media screen and (max-width:991px){
+   display: none;
+    }
 }
 
 .star1{
