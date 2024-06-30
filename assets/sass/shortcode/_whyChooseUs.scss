@@ -1,7 +1,9 @@
 .fz_why_choose{
 
 
-
+.fz_who_we_are_img{
+    padding-right: 50px;
+}
     .fz_why_choose_iconBox{
         gap: 80px;
         > *{
@@ -20,22 +22,5 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-}
-@media screen and (max-width:1199px) {
-    .fz_who_we_are{
-        flex-direction: column;
-        .fz_who_we_are_img{
-            margin: 0 auto;
-        }
-        .fz_who_we_are_text{
-           text-align: center;
-            margin: 0 auto;
-            div{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
     }
 }

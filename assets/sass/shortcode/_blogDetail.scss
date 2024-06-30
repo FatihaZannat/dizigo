@@ -28,6 +28,7 @@
 
 .fz_blog_details{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     .fz_blog_details_in {
         padding-left: 25px;
@@ -52,7 +53,7 @@
         background-color: var(--cyan);
     
         @media screen and (max-width:991px) {
-            max-width: 80%;
+            // max-width: 80%;
             margin: auto;
         }
     
@@ -76,7 +77,7 @@
         @media screen and (max-width:991px) {
           div{
             &:last-child{
-                flex-direction: column;
+                // flex-direction: column;
             }
           }
         }

@@ -1,9 +1,15 @@
 @for $i from 10 through 70 {
   .fz_mb_#{$i} {
-    margin-bottom: $i + px;
+    margin-bottom: $i + px;  
   }
 }
-
+@media screen and (max-width: 991px) {
+@for $i from 10 through 70 {
+  .fz_mb_lg_#{$i} {
+    margin-bottom: $i + px;  
+  }
+}
+}
 .fz_mb_3 {
   margin-bottom: 3px;
 }
@@ -348,6 +354,12 @@
   }
   @media screen and (max-width:991px) {
     font-size: 46px;    
+  }
+}
+.fz_brands_name{
+  justify-content: space-between;
+  @media screen and (max-width: 991px) {
+    justify-content: center;
   }
 }
 
