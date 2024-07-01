@@ -16,6 +16,7 @@
     modalVideo()
     slickInt()
     mainNav()
+    tabs()
     if ($.exists('.wow')) {
       new WOW().init();
     }
@@ -235,5 +236,31 @@
       })
     }
   }
+
+  // -----------------------tabs---------------------------------------//
+function tabs(){
+  const  tabButtons = $('.fz_testimonial')
+
+  for(let i = 0; i < tabButtons.length; i++){
+    tabButtons[i].addEventListener('click', function(){
+      let tabName = this.dataset.tab
+      const tabcontent = $('#' +tabName)
+     
+
+      let alltabContent = $('.tabContent')
+     
+      for(let i = 0; i < alltabContent.length; i++){
+        alltabContent[i].style.display = "none"
+      }
+      for(let i = 0; i < tabButtons.length; i++){
+        tabButtons[i].classList.remove('active')
+      }
+
+      tabcontent[0].style.display = "block"
+      this.classList.add('active')
+    })
+  }
+  $('.fz_testimonial:first').click()
+}
 })(jQuery)
 
