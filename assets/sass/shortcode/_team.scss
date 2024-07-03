@@ -1,6 +1,9 @@
 
 .fz_team{
     background-color: #FDF6F0;
+    img{
+        width: 100%;
+    }
 }
 .fz_team_details{
     height: 85px;
@@ -8,7 +11,8 @@
     background-color: white;
     border-radius: 5px;
     bottom: 10px;
-    left: 17px;
+    left: 50%;
+    transform: translateX(-50%);
 
     >* {
         margin: 0 15px;

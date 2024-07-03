@@ -17,6 +17,8 @@
     slickInt()
     mainNav()
     tabs()
+    isotope()
+    addActive()
     if ($.exists('.wow')) {
       new WOW().init();
     }
@@ -244,23 +246,55 @@ function tabs(){
   for(let i = 0; i < tabButtons.length; i++){
     tabButtons[i].addEventListener('click', function(){
       let tabName = this.dataset.tab
-      const tabcontent = $('#' +tabName)
-     
+      const tabcontent = $('.' + tabName)
+      // console.log('tabContent' , tabcontent);
 
       let alltabContent = $('.tabContent')
+      let alltabImg = $('.tabImg')
+      // console.log(alltabImg);
+      // console.log(alltabContent);
      
       for(let i = 0; i < alltabContent.length; i++){
         alltabContent[i].style.display = "none"
+      }
+      for(let i = 0; i < alltabImg.length; i++){
+        alltabImg[i].style.display = "none"
       }
       for(let i = 0; i < tabButtons.length; i++){
         tabButtons[i].classList.remove('active')
       }
 
       tabcontent[0].style.display = "block"
+      tabcontent[1].style.display = "block"
       this.classList.add('active')
     })
   }
   $('.fz_testimonial:first').click()
 }
+
+// init Isotope
+function isotope(){
+  let $grid = $('.item_details').isotope({
+  });
+
+  $('.item_menu').on( 'click', 'a', function() {
+    let filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  
+  });
+}
+function addActive(){
+  let items = $('.item_name')
+// console.log(items);
+items.each(function(){
+  $(this).on('click', function(){
+    items.removeClass('active')
+    $(this).addClass('active')
+  })
+})
+items[0].click()
+}
+
+
 })(jQuery)
 

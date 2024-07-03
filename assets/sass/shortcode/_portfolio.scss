@@ -1,0 +1,30 @@
+.fz_case_study_heading{
+    .item_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            padding-bottom: 20px;
+            padding-top: 20px;
+            .item_name{
+                transition: all 0.3s;
+                &:hover{
+                    background-color: var(--cyan);
+                   
+                }
+               
+            }
+        }
+    }
+}
+.active{
+    background-color: var(--cyan);
+}
+.item{
+    .fz_case_study_img{
+        img{
+            padding-bottom: 30px;
+        }
+    }
+}
