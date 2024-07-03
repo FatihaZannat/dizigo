@@ -119,7 +119,11 @@
 
     .fz_latest_post_in {
         padding: 10px;
+        @media screen and (max-width: 991px) {
+            justify-content: flex-start;
+        }
     }
+   
 }
 
 .fz_categories {
@@ -251,3 +255,8 @@
                 height: 50px;
             }
         }
+       .fz_blog{
+        img{
+            width: 100%;
+        }
+    }
